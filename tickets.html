@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="description" content="all about butterfly">
+    <meta name="author" content="shamin Memary- shamin.v@gmail.com">
+    <meta name="keywords" content="butterfly,rare,garden">
+
+    <title>Butterfly Garden</title>
+<!-- Bootstrap4.6 CSS-->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<!-- Page custome stylesheet-->
+<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body class="bg-primary">
+
+    <!-- Nav Bar-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img class="navbar-brand" src="images/butterfly.png">
+                <h4 class="d-inline align-middle" style="font-family: 'Pacifico', cursive;">Butterfly Garden</h4>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target ="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link text-primary">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link text-primary">Events</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="tickets.html" class="nav-link text-primary">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link text-primary">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-primary">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Ticket Section -->
+
+<div class="container" style="margin-top: 6.5rem;">
+   
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <img class="card-img-top img-fluid" src="images/ticket-y.png" alt="Ticket image">
+                <div class="card-body">
+                  <h5 class="card-title text-success">Admission - Child <br>(0-12)</h5>
+                  <h3 class="card-subtitle mb-3">Free</h3>
+                  <p class="card-text text-success" style="font-size:0.8rem;">One day admission, valid upon arrival date at the Gardens.</p>
+                  <button class="btn btn-outline-success" data-toggle="modal" data-target="#ticketModal">Purchase in Garden</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <img class="card-img-top img-fluid" src="images/ticket-p.png" alt="Ticket image">
+                <div class="card-body">
+                  <h5 class="card-title text-success">Admission - Student <br>(13-17)</h5>
+                  <h3 class="card-subtitle mb-3 ">$13.00 <small class="text-muted" style="font-size: x-small;">valid Student ID</small></h3>
+                  <p class="card-text text-success" style="font-size:0.8rem;">One day admission, valid upon arrival date at the Gardens.</p>
+                  <button class="btn btn-outline-success" data-toggle="modal" data-target="#ticketModal">Purchase in Garden</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <img class="card-img-top img-fluid" src="images/ticket-b.png" alt="Ticket image">
+                <div class="card-body">
+                  <h5 class="card-title text-success">Admission - Adult <br>(18-64)</h5>
+                  <h3 class="card-subtitle mb-3">$17.00</h3>
+                  <p class="card-text text-success" style="font-size:0.8rem;">One day admission, valid upon arrival date at the Gardens.</p>
+                  <button class="btn btn-outline-success" data-toggle="modal" data-target="#ticketModal">Purchase in Garden</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <img class="card-img-top img-fluid" src="images/ticket-pi.png" alt="Ticket image">
+                <div class="card-body">
+                  <h5 class="card-title text-success">Admission - Srniors<br> (65+)</h5>
+                  <h3 class="card-subtitle mb-3">$13.00</h3>
+                  <p class="card-text text-success" style="font-size:0.8rem;">One day admission, valid upon arrival date at the Gardens.</p>
+                  <button class="btn btn-outline-success" data-toggle="modal" data-target="#ticketModal">Purchase in Garden</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-9 justify-content-around">
+            <ul class="ticketRules">
+                <li>Your e-mail confirmation serves as your ticket.</li>
+                <li>Your ticket or gift card does not expire.</li>
+                <li>Admission is on a first come first served basis, we do not offer visits in designated time slots.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer id="main-footer" class="text-center p-3 bg-success text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> Designed by Shamin Memary</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!--Modal-->
+<div class="modal" id="ticketModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <img src="images/b-icon-big.png" alt="Butterfly picture">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>In near future we will have online purchase!</p>
+        </div>
+        
+                
+      </div>
+    </div>
+  </div>
+ 
+  
+<!--JQuery--> 
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<!-- Bootstrap 4.6 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!--Fontawesome-->
+<script src="https://kit.fontawesome.com/4801a05768.js" crossorigin="anonymous"></script>
+
+<!-- My Script -->
+<script>
+     // Get the current year for the copyright
+     $('#year').text(new Date().getFullYear());
+
+
+
+</script>
+</body>
+</html>

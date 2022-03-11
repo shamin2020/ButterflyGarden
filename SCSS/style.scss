@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar {
+	border-bottom: 3px solid #556b2f;
+	opacity: 0.8;
+
+	.nav-item {
+		font-size: 1.4rem;
+	}
+	.active a {
+		border-bottom: 3px solid #556b2f;
+	}
+}
+
+#home {
+	background: url(../images/butterfly-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 700px;
+	.dark-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 700px;
+		background: rgba(0, 0, 0, 0.7);
+	}
+	.home-inner {
+		padding-top: 150px;
+	}
+	.card-form {
+		opacity: 0.8;
+	}
+}
+.ticket {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100px;
+}
+
+.moveButterfly {
+	animation: myfirst 5s linear 2s infinite alternate;
+	position: relative;
+}
+
+#video-play {
+	position: relative;
+	min-height: 200px;
+	background: url("../images/video-bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0 -300px;
+	text-align: center;
+}
+
+@keyframes myfirst {
+	0% {
+		left: 0px;
+		top: 0px;
+		transform: rotateZ(150deg);
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}
+
+.ticketRules {
+	list-style: url("../images/b-icon.png");
+	margin-top: 2rem;
+
+	li {
+		margin-bottom: 0.8rem;
+	}
+}
+.team {
+	img {
+		margin-top: -100px;
+	}
+}
+
+#location {
+	margin-top: 7rem;
+	.card {
+		background-color: #fff7d0;
+		width: 65%;
+	}
+}
+
+#ourTeam {
+	background-color: #fff7d0;
+	h1 {
+		margin-bottom: 5rem;
+	}
+}
+#gallery {
+	margin-top: 7rem;
+}
+
+#events {
+	margin-top: 5rem;
+}

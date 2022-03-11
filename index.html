@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="description" content="all about butterfly">
+    <meta name="author" content="shamin Memary- shamin.v@gmail.com">
+    <meta name="keywords" content="butterfly,rare,garden">
+
+    <title>Butterfly Garden</title>
+<!-- Bootstrap4.6 CSS-->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<!-- Page custome stylesheet-->
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+</head>
+<body class="bg-primary">
+
+    <!-- Nav Bar-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img class="navbar-brand" src="images/butterfly.png">
+                <h4 class="d-inline align-middle" style="font-family: 'Pacifico', cursive;">Butterfly Garden</h4>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target ="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link text-primary">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link text-primary">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tickets.html" class="nav-link text-primary">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link text-primary">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-primary">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Home Section -->
+
+<header id="home">
+    <div class="dark-overlay">
+        <div class="home-inner container">
+            <div class="row ">
+                <div class="col-lg-8 d-none d-lg-block text-white">
+                    <h1 class="display-4">Our <strong class="text-warning" style="font-family: 'Pacifico', cursive;">Butterfly Garden</strong> <br>full of colors</h1>
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start moveButterfly">
+                            <img src="images/butterfly-icon.png" />
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nisi perspiciatis est iste voluptate distinctio eum ab dolores dolorum? Voluptatum!
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start moveButterfly">
+                            <img src="images/butterfly-icon.png"/>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nisi perspiciatis est iste voluptate distinctio eum ab dolores dolorum? Voluptatum!
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start moveButterfly">
+                            <img src="images/butterfly-icon.png"/>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nisi perspiciatis est iste voluptate distinctio eum ab dolores dolorum? Voluptatum!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-light text-center card-form">
+                        <div class="card-body">
+                            <h3>Sign up Today</h3>
+                            <p>Subescribe to get promotions and know about our events!</p>
+                            <form name="news">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control form-control-lg" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control form-control-lg" placeholder="Email">
+                                </div>
+                                <input type="submit" value="Submit" class="btn btn-outline-success btn-block" onclick="ValidateEmail(document.news.email, document.news.name)">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+ <!-- Events Section -->
+ <section id="events-head">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center py-5">
+                <h2 class="display4 text-success">Buterrfly Upcoming Events</h2>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tempore voluptatibus magni voluptas. Id expedita debitis, adipisci qui perferendis dicta commodi tempora. Itaque, consectetur accusamus? Ipsa eveniet similique libero, consequatur ducimus ratione autem officia! Doloremque nam saepe nihil praesentium perspiciatis?
+                </p>
+                <a href="" class="btn btn-outline-success">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Video Section -->
+ <section id="video-play">
+    <div class="dark-overlay container">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a href="#" class="video text-primary" data-video="https://www.youtube.com/embed/wyBVXsPO4_M" data-toggle="modal" data-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1 class="text-primary">Our Beautiful Butterfly Garden</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- VIDEO MODAL -->
+   <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Event Section -->
+<section id="event-section" class="bg-light text-muted py-5">
+<div class="container">
+   <div class="row">
+       <div class="col-md-6">
+           <img class="img-fluid mb-3 rounded-circle" src="images/butterfly2.jpg" style="width: 350px; height: 350px;" >
+       </div>
+       <div class="col-md-6">
+           <h3>How to Book for a Party! </h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ipsa modi a amet at eos consequuntur quia minima sit possimus. Adipisci quis deserunt autem, similique harum velit quae incidunt saepe natus vero consequuntur quaerat voluptas dolorem dicta dolore? Quaerat, quas!</p>
+           <div class="d-flex">
+               <div class="p-3 align-self-start">
+                   <img src="images/butterfly-icon.png" />
+               </div>
+               <div class="p-3 align-self-end">
+                   sit possimus. Adipisci quis deserunt autem, similique harum velit quae incidunt saepe natus vero consequuntur quaerat 
+               </div>
+           </div>
+           <div class="d-flex">
+               <div class="p-3 align-self-start">
+                   <img src="images/butterfly-icon.png" />
+               </div>
+               <div class="p-3 align-self-end">
+                   sit possimus. Adipisci quis deserunt autem, similique harum velit quae incidunt saepe natus vero consequuntur quaerat 
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+</section>
+
+
+<!-- FOOTER -->
+
+<footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> Designed by Shamin Memary</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="btn btn-success m-4 ticket" type="button" onclick="location.href = 'tickets.html';"><span class="spinner-grow text-primary"></span>TICKETS</button>
+<!--JQuery--> 
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<!-- Bootstrap 4.6 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!--Fontawesome-->
+<script src="https://kit.fontawesome.com/4801a05768.js" crossorigin="anonymous"></script>
+
+<!-- My Script -->
+<script>
+     // Get the current year for the copyright
+     $('#year').text(new Date().getFullYear());
+
+ // Video Play
+ $(function () {
+      // Auto play modal video
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    });
+//email validation
+function ValidateEmail(email , name)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(email.value.match(mailformat))
+{
+    if(name.value != 0) {
+        alert(name.value + "!" + " " +"You Signe up seuccessfully!");
+        document.news.name.focus();
+        
+        return true;
+
+    } else {
+        alert("You don't entere your name!");
+document.news.name.focus();
+return false;
+    }
+
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.news.email.focus();
+return false;
+}
+}
+
+
+</script>
+</body>
+</html>
