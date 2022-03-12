@@ -7,3 +7,4 @@ In this project I used following techs:
 . JQuery
 . Bootstrap 4
 . Lightbox and StickySlider
+. SASS
